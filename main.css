@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+} 
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+.container{ 
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* height: 200vh; */
+ } 
+ header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background: #333;
+    z-index: 1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 9%;
+}
+header .logo{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header .icons i{
+    font-size: 1.5rem;
+    color:#fff;
+    cursor:pointer;
+    margin-right: 2rem;
+}
+.login{
+    margin-top: 75px;
+    width: 1100px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 90px 90px 90px 90px;
+    background: rgb(74, 72, 72);
+    display: flex; 
+    box-shadow: 15px 5px 30px rgba(0,0,0,.3); 
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: 15px;
+}
+.heading{
+    text-align: center;
+    padding:0.5rem 0;
+}
+.container .login .image{
+    flex: 1 1 30rem;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background: #c74d63;
+    align-items: center;
+ }
+
+
+
+.registration{
+    flex: 1 1 33rem;
+    background: #333;
+    padding: 25px;
+}
+.registration h1{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.image img{
+    background-color: rgb(39, 177, 201);
+    border-radius: 50%;
+    align-items: center;
+}
+.image h1{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.image p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+} 
+
+::placeholder{
+    color: #f5f5f5;
+    font-size: 15px;
+} 
+
+.input-name{
+    display: flex;
+    flex-wrap: 2rem;
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+}
+.input-name input{
+    color:#a8e0f0;
+    font-size: 17px;
+}
+.lock{
+    padding: 8px 11px;
+}
+.text-name{
+    width: 100%;
+    padding: 8px 0 8px 40px;
+}
+.input-name i{
+    position: absolute;
+    font-size: 18px;
+    border-right: 1px solid #333;
+}
+.email{
+    padding: 8px;
+}
+.text-name, .name{
+    border: 2px solid #ce4d62;
+    border-radius: 5px;
+    background: #777;
+    outline: none;
+} 
+.fa-calendar-days, .fa-phone, .fa-house{
+    padding: 8px;
+}
+.problem{
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #f5f5f5;
+    border: 2px solid #ce4d62;
+    border-radius: 5px;
+    background: #777;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: all 0.2s ease;
+}
+.problem::-ms-expand{
+    display: none;
+}
+.problem:hover, .problem:focus{
+    color:#000;
+    background: #f4f4f4;
+    border-color: #000;
+    outline: none;
+}
+textarea{
+    color: #7ed0e7;
+    font-size: 17px;
+}
+.check{
+    color: #f4f4f4;
+    font-size:18px;
+}
+.btn{
+    background-color: #ce4d62;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.btn:hover{
+    background-color: #f5ba1a;
+} 
+
+
+
+@media (max-width:1200px){
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width:991px){
+    /* header{
+        padding:1.5rem;
+    } */
+    .registration{
+     height: 100%;
+    }
+} 
+
+@media(max-width:768px){
+    /* header{
+        padding: 2.5rem;
+    } */
+    /* .container{
+        height: 100%;
+    } */
+    .login .registration form{
+        height: 100%;
+    }
+}
+
+@media(max-width:480px){
+    .container{
+        width: 100%;
+    }
+    .input-name{
+        margin-bottom: -10px;
+    }
+    .name{
+        width:100%;
+        padding: 8px 0 8px 40px;
+        margin-bottom: 10px;
+    } 
+    /* .input-name span{
+        padding: 0;
+        margin: 0;
+    } */
+    /* .login{
+        flex-direction: column;
+        margin-top: 55px;
+        
+    } */
+    /* .container form .input-name input{
+        width: 100%;
+    }*/ 
+}

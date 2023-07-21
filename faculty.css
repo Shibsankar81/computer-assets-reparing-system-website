@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background: #cdcdcd;
+    padding: 5rem;
+}
+head title{
+    color: #b42d80;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem auto;
+    }
+
+.title{
+    position: fixed;
+    top: 0rem;
+    right: 0;
+    width: 100vw;
+    height: 10vh;
+    z-index: 10000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #cdcdcd;
+}
+.container table thead tr th{
+    background-image: linear-gradient(140deg,rgb(247, 108, 170), rgb(182, 232, 102));
+    
+}
+.container table{
+    border: 2px solid rgb(0, 81, 255);
+    background:rgba(13, 239, 255, 0.144);;
+    color: #000000;
+    border-radius: 5px;
+}
+.container table thead tr td{
+    background: #b42d80;
+}
+.container .title h2{
+    color: deeppink;
+    text-align: center;
+}
+
+@media(max-width:536px){
+    .container table th:nth-child(6),
+    .container table td:nth-child(6),
+    .container table th:nth-child(4),
+    .container table td:nth-child(4),
+    .container table th:nth-child(2),
+    .container table td:nth-child(2)
+        {
+        display: none;
+    }
+    
+}
